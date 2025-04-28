@@ -1,3 +1,5 @@
+//ARQUIVO INÚTIL, SÓ USO PARA VERIFICAR.//
+
 const express = require("express");
 
 const server = express();
@@ -28,6 +30,7 @@ server.get("/customers/:id", (req, res) => {
     const customer = customers.find(item => item.id === id);
     const status = customer ? 200 : 404;
 
+    //debug com console.log 
     console.log("GET :: /customers/:id", JSON.stringify(customer))
 
     return res.status(status).json(customer);

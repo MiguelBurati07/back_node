@@ -1,5 +1,5 @@
-const express = require("express");
-const routes = require("./routes");
+import express from "express";
+import routes from "./routes";
 
 class App {
     constructor() {
@@ -18,4 +18,6 @@ class App {
 }
 
 //necessario para instanciar a classe 
-module.exports = new App().server;
+export default new App().server;
+
+//////// 15:08 da aula 0604 //////////////

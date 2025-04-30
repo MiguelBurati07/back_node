@@ -19,5 +19,3 @@ class App {
 
 //necessario para instanciar a classe 
 export default new App().server;
-
-//////// 15:08 da aula 0604 //////////////
